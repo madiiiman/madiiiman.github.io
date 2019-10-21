@@ -31,10 +31,10 @@ public class Program
 				string[][] Dwarves = { 
 						 				new string[] { "Happy" },  
 						 				new string[] { "Sleepy" },  
-					     				new string[] { "Bashful" },
+					     					new string[] { "Bashful" },
 						 				new string[] { "Doc" },
 										new string[] { "Sneezy" }, 
-                        				new string[] { "Angry" }, 
+                        							new string[] { "Grumpy" }, 
 										new string[] { "Dopey" } 
 			};
 								 
