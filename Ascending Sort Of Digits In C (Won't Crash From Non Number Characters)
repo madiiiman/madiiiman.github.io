@@ -1,0 +1,34 @@
+#include <stdio.h>
+#include <string.h>
+int main() 
+{
+   char intake[100];
+	printf("Please Put In Digits to Be Sorted Into Ascending Order: \n");
+	fgets(intake, sizeof(intake), stdin);
+   for (int i = 0; i < strlen(intake); i++) 
+   {
+		int j;
+    	while ((intake[i] >= 1 && intake[i] <= 47 ) || (intake[i] >= 58 && intake[i] <= 127))
+    	{
+        	for (j = i; j < strlen(intake); j++) 
+        	{
+        	  intake[j] = intake[j + 1];
+        	}
+         intake[j] = '\0';
+    	}
+   }
+   for (int i = i; i < strlen(intake); i++)
+   {
+		for (int j = 0; j < strlen(intake) - i; j++)
+   		{
+   			if(intake[j] > intake[j + 1])
+			{
+				int placeholder = intake[j];
+				intake[j] = intake[j + 1];
+				intake[j + 1] = placeholder;
+			}
+   		}
+   }
+   printf("%s", intake);
+   return 0;
+}
