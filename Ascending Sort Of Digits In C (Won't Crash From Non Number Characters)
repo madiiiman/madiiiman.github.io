@@ -17,7 +17,7 @@ int main()
          		intake[j] = '\0';
     		}
  	  }
-  	 for (int i = i; i < strlen(intake); i++)
+  	 for (int i = 1; i < strlen(intake); i++)
   	 {
 		for (int j = 0; j < strlen(intake) - i; j++)
    		{
